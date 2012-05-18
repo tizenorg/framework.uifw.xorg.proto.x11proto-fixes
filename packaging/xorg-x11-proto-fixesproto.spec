@@ -17,7 +17,7 @@ Xorg X11 Protocol fixesproto
 
 
 %prep
-%setup -q -n fixesproto-%{version}
+%setup -q -n %{name}-%{version}
 
 %build
 
