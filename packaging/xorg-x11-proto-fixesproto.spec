@@ -7,6 +7,7 @@ Group:      Development/System
 License:    MIT
 URL:        http://www.x.org
 Source0:    http://xorg.freedesktop.org/releases/individual/proto/fixesproto-%{version}.tar.gz
+Source1001: packaging/xorg-x11-proto-fixesproto.manifest 
 Provides:   fixesproto
 BuildRequires: pkgconfig(xorg-macros)
 
@@ -20,6 +21,7 @@ Xorg X11 Protocol fixesproto
 %setup -q -n %{name}-%{version}
 
 %build
+cp %{SOURCE1001} .
 
 %reconfigure --disable-static \
     --libdir=%{_datadir}
@@ -37,6 +39,7 @@ rm -rf %{buildroot}
 
 
 %files
+%manifest xorg-x11-proto-fixesproto.manifest
 %defattr(-,root,root,-)
 %{_datadir}/pkgconfig/fixesproto.pc
 %{_includedir}/X11/extensions/xfixeswire.h
