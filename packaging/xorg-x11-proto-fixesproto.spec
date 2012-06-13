@@ -3,7 +3,7 @@ Name:       xorg-x11-proto-fixesproto
 Summary:    X.Org X11 Protocol fixesproto
 Version:    4.1.2
 Release:    1.1
-Group:      Development/System
+Group:      Graphics/X Window System
 License:    MIT
 URL:        http://www.x.org
 Source0:    %{name}-%{version}.tar.gz
