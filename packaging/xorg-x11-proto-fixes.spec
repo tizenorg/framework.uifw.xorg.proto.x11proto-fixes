@@ -1,13 +1,12 @@
 Name:     xorg-x11-proto-fixes
 Summary:  X.Org X11 Protocol fixesproto
 Version:  5.0
-Release:  1
+Release:  2
 Group:    Development/System
 License:  MIT
 URL:      http://www.x.org
 Source0:  %{name}-%{version}.tar.gz
 Provides: fixesproto
-
 
 BuildRequires: pkgconfig
 BuildRequires: pkgconfig(xorg-macros)
